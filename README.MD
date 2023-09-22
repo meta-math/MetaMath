@@ -59,7 +59,7 @@
 | MetaMath-7B         | **66.4**     | **19.4**    |
 | MetaMath-13B        | **71.0**     | **22.5**    |
 | WizardMath-70B      | 81.6         | 22.7        |
-| WizardMath-13B      | **82.3**     | **26.0**    |
+| MetaMath-70B        | **82.3**     | **26.0**    |
 
 
 <h2 id="training">Training</h2>
