@@ -16,14 +16,14 @@
 
 ## News
 - 🔥 A 40K subset of our **MetaMathQA** dataset is now released in the huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)!
-- 🔥 Our **MetaMath-70B** model slightly outperforms some closed-source LLMs on the GSM8K, including **ChatGPT 3.5**, **Claude Instant 1** and **PaLM 2 540B**!
-- 🔥 Our **MetaMath-7B** model achieves  **66.4 pass@1** on the [GSM8k Benchmarks](https://github.com/openai/grade-school-math), which is **11.5** points higher than the SOTA open-source LLM!
-- 🔥 Our **MetaMath-7B** model achieves  **19.4 pass@1** on the [MATH Benchmarks](https://github.com/hendrycks/math), which is **8.7** points higher than the SOTA open-source LLM!
+- 🔥 Although the data augmentation for **MetaMathQA** is sourced from **ChatGPT 3.5**, Our **MetaMath-70B** model outperforms the closed-source LLMs **ChatGPT 3.5** on the GSM8K!
+- 🔥 Our **MetaMath-7B** model achieves  **66.4 pass@1** on the [GSM8k Benchmarks](https://github.com/openai/grade-school-math), **11.5** points higher than the SOTA open-source LLM!
+- 🔥 Our **MetaMath-7B** model achieves  **19.4 pass@1** on the [MATH Benchmarks](https://github.com/hendrycks/math), **8.7** points higher than the SOTA open-source LLM!
 
 | Model | Checkpoint | Paper  | GSM8k | MATH  | License|
 | ----- |------| ---- |------|-------| ----- |
-| MetaMath-70B-V1.0 | 🤗 <a href="https://huggingface.co/meta-math/MetaMath-7B-V1.0" target="_blank">HF Link</a> |  📃 <a href="https://arxiv.org/abs/2309.12284" target="_blank">[MetaMath]</a>| **82.3**  |  **26.0**	| <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2  </a> |
-| MetaMath-13B-V1.0 | 🤗 <a href="https://huggingface.co/meta-math/MetaMath-7B-V1.0" target="_blank">HF Link</a> |  📃 <a href="https://arxiv.org/abs/2309.12284" target="_blank">[MetaMath]</a>| **71.0**  |  **22.5** | <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 </a> |
+| MetaMath-70B-V1.0 | 🤗 <a href="https://huggingface.co/meta-math/MetaMath-70B-V1.0" target="_blank">HF Link</a> |  📃 <a href="https://arxiv.org/abs/2309.12284" target="_blank">[MetaMath]</a>| **82.3**  |  **26.0**	| <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2  </a> |
+| MetaMath-13B-V1.0 | 🤗 <a href="https://huggingface.co/meta-math/MetaMath-13B-V1.0" target="_blank">HF Link</a> |  📃 <a href="https://arxiv.org/abs/2309.12284" target="_blank">[MetaMath]</a>| **71.0**  |  **22.5** | <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 </a> |
 | MetaMath-7B-V1.0 | 🤗 <a href="https://huggingface.co/meta-math/MetaMath-7B-V1.0" target="_blank">HF Link</a>  |  📃 <a href="https://arxiv.org/abs/2309.12284" target="_blank">[MetaMath]</a>| 	 **66.4**  |  **19.4** |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2  </a>|
                                                                                                                                                                                                                                                                                                    
                                                                                                                                                                                                                                                                                                                                                                              
@@ -87,7 +87,7 @@ The inference prompt for our MetaMath is:
 Thanks for the open source code of [WizardMath](https://github.com/nlpxucan/WizardLM/tree/main/WizardMath) and [RFT](https://github.com/OFA-Sys/gsm8k-ScRel/tree/main). Some of our codes are based on them.
 
 <h2 id="citation">Citation</h2>
-Please cite the paper if you refer to our model or code or data or paper from MetaMath.
+Please cite the paper if you refer to our model, code, data or paper from MetaMath.
 
 ```
 @misc{yu2023metamath,
