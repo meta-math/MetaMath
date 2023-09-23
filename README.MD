@@ -1,4 +1,4 @@
-# MetaMath : Bootstrap Your Own Mathematical Questions for Large Language Models
+# MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](CODE_LICENSE)
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](DATA_LICENSE)
@@ -15,10 +15,10 @@
 
 
 ## News
-
-- 🔥 Our **MetaMath-70B** model slightly outperforms some closed-source LLMs on the GSM8K, including **ChatGPT 3.5**, **Claude Instant 1** and **PaLM 2 540B**.
-- 🔥 Our **MetaMath-7B** model achieves  **66.4 pass@1** on the [GSM8k Benchmarks](https://github.com/openai/grade-school-math), which is **11.5** points higher than the SOTA open-source LLM.
-- 🔥 Our **MetaMath-7B** model achieves  **19.4 pass@1** on the [MATH Benchmarks](https://github.com/hendrycks/math), which is **8.7** points higher than the SOTA open-source LLM.
+- 🔥 A 40K subset of our **MetaMathQA** dataset is now released in the huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)!
+- 🔥 Our **MetaMath-70B** model slightly outperforms some closed-source LLMs on the GSM8K, including **ChatGPT 3.5**, **Claude Instant 1** and **PaLM 2 540B**!
+- 🔥 Our **MetaMath-7B** model achieves  **66.4 pass@1** on the [GSM8k Benchmarks](https://github.com/openai/grade-school-math), which is **11.5** points higher than the SOTA open-source LLM!
+- 🔥 Our **MetaMath-7B** model achieves  **19.4 pass@1** on the [MATH Benchmarks](https://github.com/hendrycks/math), which is **8.7** points higher than the SOTA open-source LLM!
 
 | Model | Checkpoint | Paper  | GSM8k | MATH  | License|
 | ----- |------| ---- |------|-------| ----- |
