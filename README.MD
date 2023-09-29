@@ -15,6 +15,7 @@
 
 
 ## News
+- 🔥 We will release the full dataset before October 1st!!
 - 🔥 A 40K subset of our **MetaMathQA** dataset is now released in the huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)!
 - 🔥 Although the data augmentation for **MetaMathQA** is sourced from **ChatGPT 3.5**, Our **MetaMath-70B** model outperforms the closed-source LLMs **ChatGPT 3.5** on the GSM8K!
 - 🔥 Our **MetaMath-7B** model achieves  **66.4 pass@1** on the [GSM8k Benchmarks](https://github.com/openai/grade-school-math), **11.5** points higher than the SOTA open-source LLM!
