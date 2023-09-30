@@ -57,10 +57,10 @@
 | WizardMath-7B       | 54.9         | 10.7        |
 | LLaMA-2-70B         | 56.8         | 13.5        |
 | WizardMath-13B      | 63.9         | 14.0        |
-| MetaMath-7B         | **66.4**     | **19.4**    |
-| MetaMath-13B        | **71.0**     | **22.5**    |
+| MetaMath-7B         | **66.5**     | **19.8**    |
+| MetaMath-13B        | **72.3**     | **22.4**    |
 | WizardMath-70B      | 81.6         | 22.7        |
-| MetaMath-70B        | **82.3**     | **26.0**    |
+| MetaMath-70B        | **82.3**     | **26.6**    |
 
 
 <h2 id="training">Training</h2>
@@ -91,12 +91,10 @@ Thanks for the open source code of [WizardMath](https://github.com/nlpxucan/Wiza
 Please cite the paper if you refer to our model, code, data or paper from MetaMath.
 
 ```
-@misc{yu2023metamath,
-      title={MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models}, 
-      author={Longhui Yu and Weisen Jiang and Han Shi and Jincheng Yu and Zhengying Liu and Yu Zhang and James T. Kwok and Zhenguo Li and Adrian Weller and Weiyang Liu},
-      year={2023},
-      eprint={2309.12284},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@article{yu2023metamath,
+  title={MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models},
+  author={Yu, Longhui and Jiang, Weisen and Shi, Han and Yu, Jincheng and Liu, Zhengying and Zhang, Yu and Kwok, James T and Li, Zhenguo and Weller, Adrian and Liu, Weiyang},
+  journal={arXiv preprint arXiv:2309.12284},
+  year={2023}
 }
 ```
