@@ -78,6 +78,7 @@ We supervised fine-tune MetaMath-7B with the following hyperparameters:
 
 <h2 id="train">Training</h2>
 you need to prepare the  llama-2 base model and our **MetaMathQA** dataset huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)
+
 ```
 bash run.sh
 ```
@@ -115,7 +116,6 @@ we use the vllm to help the fast generation:
 ```
 python eval_gsm8k.py --model "path/to/save" --data_path ./data/test/GSM8K_test.jsonl
 python eval_math.py --model "path/to/save" --data_path ./data/test/MATH_test.jsonl
-
 ```
 where the "path/to/save" should be replaced by the finetuned model, you can also download our series of MetaMath models in huggingface:  
 🤗 <a href="https://huggingface.co/meta-math/MetaMath-7B-V1.0" target="_blank">MetaMath 7B</a> 🤗 <a href="https://huggingface.co/meta-math/MetaMath-13B-V1.0" target="_blank">MetaMath 13B</a> 🤗 <a href="https://huggingface.co/meta-math/MetaMath-70B-V1.0" target="_blank">MetaMath 70B</a>
