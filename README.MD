@@ -17,8 +17,8 @@
 ## News
 - 🔥 The full **MetaMathQA** dataset is now released in the huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)!
 - 🔥 Although the data augmentation for **MetaMathQA** is sourced from **ChatGPT 3.5**, Our **MetaMath-70B** model outperforms the closed-source LLMs **ChatGPT 3.5** on the GSM8K!
-- 🔥 Our **MetaMath-7B** model achieves  **66.4 pass@1** on the [GSM8k Benchmarks](https://github.com/openai/grade-school-math), **11.5** points higher than the SOTA open-source LLM!
-- 🔥 Our **MetaMath-7B** model achieves  **19.4 pass@1** on the [MATH Benchmarks](https://github.com/hendrycks/math), **8.7** points higher than the SOTA open-source LLM!
+- 🔥 Our **MetaMath-7B** model achieves  **66.5 pass@1** on the [GSM8k Benchmarks](https://github.com/openai/grade-school-math), **11.6** points higher than the SOTA open-source LLM!
+- 🔥 Our **MetaMath-7B** model achieves  **19.8 pass@1** on the [MATH Benchmarks](https://github.com/hendrycks/math), **9.1** points higher than the SOTA open-source LLM!
 
 | Model | Checkpoint | Paper  | GSM8k | MATH  | License|
 | ----- |------| ---- |------|-------| ----- |
@@ -73,7 +73,7 @@ We supervised fine-tune MetaMath-7B with the following hyperparameters:
 | Batch size     | 128         |
 | Learning rate  | 2e-5        |
 | Epochs         | 3           |
-| Max length     | 1024        |
+| Max length     | 2048        |
 | LR scheduler   | cosine      |
 
 <h2 id="train">Training</h2>
