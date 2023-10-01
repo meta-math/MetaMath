@@ -123,41 +123,12 @@ def gsm8k_test(model, data_path, start=0, end=MAX_INT, batch_size=1, tensor_para
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str)  # model path
-    parser.add_argument("--data_file", type=str, default='/home/wliu/longhui/llms-all/gsm8k-inverse/data/test_use.jsonl')  # data path
+    parser.add_argument("--data_file", type=str, default='')  # data path
     parser.add_argument("--start", type=int, default=0) #start index
     parser.add_argument("--end", type=int, default=MAX_INT)  # end index
     parser.add_argument("--batch_size", type=int, default=400)  # batch_size
     parser.add_argument("--tensor_parallel_size", type=int, default=8)  # tensor_parallel_size
     return parser.parse_args()
-    # module load cuda/11.7
-    # export TORCH_EXTENSIONS_DIR=./tmp
-    # export PATH=/home/wliu/anaconda3/envs/llama_adapter/bin:$PATH
-    # python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/lora_7b
-    # python eval_math.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/lora_7b
-    # python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/lora_7b_cosine
-# python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/llama-70b-merged-qlora
 if __name__ == "__main__":
     args = parse_args()
     gsm8k_test(model=args.model, data_path=args.data_file, start=args.start, end=args.end, batch_size=args.batch_size, tensor_parallel_size=args.tensor_parallel_size)
-
-# MODEL_DIR='/lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-re'
-# MODEL_DIR='/lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-back'
-# MODEL_DIR='/lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-merge'
-# MODEL_DIR='/lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-gsm_240k'
-# MODEL_DIR='/lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-gsm_merge_353k'
-# MODEL_DIR='/lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-gsm_merge_no_special_353k'
-# MODEL_DIR='/lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-gsm_no_special_240k'
-
-# python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-gsm_no_special_240k
-# python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-gsm_merge_no_special_353k
-# python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-gsm_merge_353k
-# python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-gsm_240k
-
-# python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-for
-# python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-re
-# python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-back
-# python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_llama-7b-merge
-
-
-
-# python eval_wizard_gsm8k.py --model /lustre/fast/fast/wliu/longhui/inverse_ckpt/MATH_gsm_llama-7b-398k --tensor_parallel_size 8 --batch_size 400 --data_file /home/wliu/longhui/llms-all/gsm8k-inverse/data/test_use.jsonl
