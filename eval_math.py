@@ -102,8 +102,8 @@ def test_hendrycks_math(model, data_path, start=0, end=MAX_INT, batch_size=1, te
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", type=str, default='/lustre/fast/fast/wliu/longhui/inverse_ckpt/llama-2-7b-sft/')  # model path
-    parser.add_argument("--data_file", type=str, default='/home/wliu/longhui/llms-all/gsm8k-inverse/data/MATH/MATH_test.jsonl')  # data path
+    parser.add_argument("--model", type=str, default='')  # model path
+    parser.add_argument("--data_file", type=str, default='')  # data path
     parser.add_argument("--start", type=int, default=0) #start index
     parser.add_argument("--end", type=int, default=MAX_INT)  # end index
     parser.add_argument("--batch_size", type=int, default=400)  # batch_size
@@ -113,5 +113,3 @@ def parse_args():
 if __name__ == "__main__":
     args = parse_args()
     test_hendrycks_math(model=args.model, data_path=args.data_file, start=args.start, end=args.end, batch_size=args.batch_size, tensor_parallel_size=args.tensor_parallel_size)
-
-# python eval_math.py --tensor_parallel_size 8 --batch_size 384 --model
