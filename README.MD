@@ -76,8 +76,49 @@ We supervised fine-tune MetaMath-7B with the following hyperparameters:
 | Max length     | 1024        |
 | LR scheduler   | cosine      |
 
+<h2 id="train">Training</h2>
+you need to prepare the  llama-2 base model and our **MetaMathQA** dataset huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)
+```
+bash run.sh
+```
+or
+
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 -m torch.distributed.launch --master_addr ${MASTER_ADDR} --master_port ${MASTER_PORT} --nproc_per_node=8 --use_env train_math.py \
+    --model_name_or_path "path/to/llama-2" \
+    --data_path "path/to/metamathqa" \
+    --data_length 10000000 \
+    --bf16 True \
+    --output_dir "path/to/save" \
+    --num_train_epochs 3 \
+    --per_device_train_batch_size 4 \
+    --per_device_eval_batch_size 4 \
+    --gradient_accumulation_steps 4 \
+    --evaluation_strategy "no" \
+    --save_strategy "steps" \
+    --save_steps 1000 \
+    --save_total_limit 2 \
+    --learning_rate 2e-5 \
+    --weight_decay 0. \
+    --warmup_ratio 0.03 \
+    --lr_scheduler_type "cosine" \
+    --logging_steps 1 \
+    --fsdp "full_shard auto_wrap" \
+    --fsdp_transformer_layer_cls_to_wrap 'LlamaDecoderLayer' \
+    --tf32 True
+```
 
 <h2 id="evaluation">Evaluation</h2>
+
+we use the vllm to help the fast generation:
+
+```
+python eval_gsm8k.py --model "path/to/save" --data_path ./data/test/GSM8K_test.jsonl
+python eval_math.py --model "path/to/save" --data_path ./data/test/MATH_test.jsonl
+
+```
+where the "path/to/save" should be replaced by the finetuned model, you can also download our series of MetaMath models in huggingface:  
+🤗 <a href="https://huggingface.co/meta-math/MetaMath-7B-V1.0" target="_blank">MetaMath 7B</a> 🤗 <a href="https://huggingface.co/meta-math/MetaMath-13B-V1.0" target="_blank">MetaMath 13B</a> 🤗 <a href="https://huggingface.co/meta-math/MetaMath-70B-V1.0" target="_blank">MetaMath 70B</a>
 
 The inference prompt for our MetaMath is:
 ```
