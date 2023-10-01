@@ -5,7 +5,6 @@ import jsonlines
 from fraction import Fraction
 from vllm import LLM, SamplingParams
 import sys
-
 MAX_INT = sys.maxsize
 
 def is_number(s):
