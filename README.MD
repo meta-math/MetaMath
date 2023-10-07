@@ -16,6 +16,7 @@
 
 ## News
 - 🔥 The full **MetaMathQA** dataset is now released in the huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)!
+- 🔥 We released the GSM8K_Backward dataset is also released in the huggingface [GSM8K_Backward](https://huggingface.co/datasets/meta-math/GSM8K_Backward) to evaluate the reverse mathematical reasoning ability!
 - 🔥 Although the data augmentation for **MetaMathQA** is sourced from **ChatGPT 3.5**, Our **MetaMath-70B** model outperforms the closed-source LLMs **ChatGPT 3.5** on the GSM8K!
 - 🔥 Our **MetaMath-7B** model achieves  **66.5 pass@1** on the [GSM8k Benchmarks](https://github.com/openai/grade-school-math), **11.6** points higher than the SOTA open-source LLM!
 - 🔥 Our **MetaMath-7B** model achieves  **19.8 pass@1** on the [MATH Benchmarks](https://github.com/hendrycks/math), **9.1** points higher than the SOTA open-source LLM!
