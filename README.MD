@@ -77,7 +77,10 @@ We supervised fine-tune MetaMath-7B with the following hyperparameters:
 | Max length     | 2048        |
 | LR scheduler   | cosine      |
 
+<h2 id="env">Quick Start</h2>
+
 <h2 id="train">Training</h2>
+
 you need to prepare the  llama-2 base model and our **MetaMathQA** dataset huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)
 
 ```
