@@ -1,6 +1,6 @@
+transformers>=4.28.1
 wandb==0.15.3
 vllm==0.1.4
-transformers>=4.28.1
 torch==2.0.1
 sentencepiece==0.1.99
 tokenizers==0.13.3
@@ -12,3 +12,5 @@ numpy
 fire
 openai
 scipy
+jsonlines
+pandas
