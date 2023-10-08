@@ -62,21 +62,6 @@
 | WizardMath-70B      | 81.6         | 22.7        |
 | MetaMath-70B        | **82.3**     | **26.6**    |
 
-
-<h2 id="training">Training</h2>
-
-### Supervised fine-tuning
-
-We supervised fine-tune MetaMath-7B with the following hyperparameters:
-
-| Hyperparameter | LLaMA 2 7B |
-|----------------|-------------|
-| Batch size     | 128         |
-| Learning rate  | 2e-5        |
-| Epochs         | 3           |
-| Max length     | 2048        |
-| LR scheduler   | cosine      |
-
 <h2 id="env">Quick Start</h2>
 
 Clone Metamath and install the required packages:
@@ -87,7 +72,7 @@ cd MetaMath
 pip install -r requirements.txt
 ```
 
-If you encounter a Rat installation problem, please run:
+If you encounter a Ray installation problem, please run:
 
 ```bash
 pip install --upgrade ray
@@ -137,6 +122,18 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 -m torch.distributed.launch --maste
     --fsdp_transformer_layer_cls_to_wrap 'LlamaDecoderLayer' \
     --tf32 True
 ```
+
+### Supervised fine-tuning
+
+We supervised fine-tune MetaMath-7B with the following hyperparameters:
+
+| Hyperparameter | LLaMA 2 7B |
+|----------------|-------------|
+| Batch size     | 128         |
+| Learning rate  | 2e-5        |
+| Epochs         | 3           |
+| Max length     | 2048        |
+| LR scheduler   | cosine      |
 
 <h2 id="evaluation">Evaluation</h2>
 
