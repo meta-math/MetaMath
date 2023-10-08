@@ -94,6 +94,16 @@ pip install --upgrade ray
 pip install --upgrade pyarrow
 ```
 
+<h2 id="Inference">Dataset Usage</h2>
+
+Run the following command to load the data:
+
+```python
+from datasets import load_dataset
+dataset = load_dataset("meta-math/MetaMathQA")
+```
+
+
 <h2 id="train">Training</h2>
 
 you need to prepare the  llama-2 base model and our **MetaMathQA** dataset huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)
