@@ -79,6 +79,21 @@ We supervised fine-tune MetaMath-7B with the following hyperparameters:
 
 <h2 id="env">Quick Start</h2>
 
+Clone Metamath and install the required packages:
+
+```bash
+git clone https://github.com/meta-math/MetaMath.git
+cd MetaMath
+pip install -r requirements.txt
+```
+
+If you encounter a Rat installation problem, please run:
+
+```bash
+pip install --upgrade ray
+pip install --upgrade pyarrow
+```
+
 <h2 id="train">Training</h2>
 
 you need to prepare the  llama-2 base model and our **MetaMathQA** dataset huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)
