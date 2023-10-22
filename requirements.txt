@@ -1,11 +1,11 @@
-transformers>=4.28.1
+transformers>=4.34.0
 wandb==0.15.3
-vllm==0.1.4
 torch==2.0.1
 sentencepiece==0.1.99
 tokenizers==0.13.3
 accelerate==0.21.0
-bitsandbytes==0.40.0 
+bitsandbytes==0.40.0
+vllm
 fraction
 tqdm
 numpy
