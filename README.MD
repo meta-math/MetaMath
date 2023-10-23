@@ -15,6 +15,7 @@
 
 
 ## News
+- 🔥 Our **MetaMath-Mistral-7B** model achieves  **77.7 pass@1** on the [GSM8k Benchmarks](https://github.com/openai/grade-school-math), surpassing all the SOTA open-source LLM! All the training scripts and the model are opened.
 - 🔥 The full **MetaMathQA** dataset is now released in the huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)!
 - 🔥 We released the GSM8K_Backward dataset is also released in the huggingface [GSM8K_Backward](https://huggingface.co/datasets/meta-math/GSM8K_Backward) to evaluate the reversal mathematical reasoning ability!
 - 🔥 Although the data augmentation for **MetaMathQA** is sourced from **ChatGPT 3.5**, Our **MetaMath-70B** model outperforms the closed-source LLMs **ChatGPT 3.5** on the GSM8K!
@@ -26,6 +27,7 @@
 | MetaMath-70B-V1.0 | 🤗 <a href="https://huggingface.co/meta-math/MetaMath-70B-V1.0" target="_blank">HF Link</a> |  📃 <a href="https://arxiv.org/abs/2309.12284" target="_blank">[MetaMath]</a>| **82.3**  |  **26.6**	| <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2  </a> |
 | MetaMath-13B-V1.0 | 🤗 <a href="https://huggingface.co/meta-math/MetaMath-13B-V1.0" target="_blank">HF Link</a> |  📃 <a href="https://arxiv.org/abs/2309.12284" target="_blank">[MetaMath]</a>| **72.3**  |  **22.4** | <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 </a> |
 | MetaMath-7B-V1.0 | 🤗 <a href="https://huggingface.co/meta-math/MetaMath-7B-V1.0" target="_blank">HF Link</a>  |  📃 <a href="https://arxiv.org/abs/2309.12284" target="_blank">[MetaMath]</a>| 	 **66.5**  |  **19.8** |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2  </a>|
+| MetaMath-Mistral-7B | 🤗 <a href="https://huggingface.co/meta-math/MetaMath-Mistral-7B" target="_blank">HF Link</a>  |  📃 <a href="https://arxiv.org/abs/2309.12284" target="_blank">[MetaMath]</a>| 	 **77.7**  |  **28.2** |  <a href="http://www.apache.org/licenses/" target="_blank">Apache License 2.0  </a>|
                                                                                                                                                                                                                                                                                                    
                                                                                                                                                                                                                                                                                                                                                                              
 
@@ -57,10 +59,11 @@
 | WizardMath-7B       | 54.9         | 10.7        |
 | LLaMA-2-70B         | 56.8         | 13.5        |
 | WizardMath-13B      | 63.9         | 14.0        |
-| MetaMath-7B         | **66.5**     | **19.8**    |
-| MetaMath-13B        | **72.3**     | **22.4**    |
+| 🔥 MetaMath-7B         | **66.5**     | **19.8**    |
+| 🔥 MetaMath-13B        | **72.3**     | **22.4**    |
+| 🔥 MetaMath-Mistral-7B | **77.7**     | **28.2**    |
 | WizardMath-70B      | 81.6         | 22.7        |
-| MetaMath-70B        | **82.3**     | **26.6**    |
+| 🔥 MetaMath-70B        | **82.3**     | **26.6**    |
 
 <h2 id="env">Quick Start</h2>
 
