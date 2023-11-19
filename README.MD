@@ -14,6 +14,7 @@
 
 
 ## News
+- 🔥 Our **MetaMath-Llemma-7B** model achieves  **30.0 pass@1** on the MATH Benchmarks, surpassing all the SOTA open-source LLM in 7B-13B scales! All the training scripts and the model are opened.
 - 🔥 Our **MetaMath-Mistral-7B** model achieves  **77.7 pass@1** on the [GSM8k Benchmarks](https://github.com/openai/grade-school-math), surpassing all the SOTA open-source LLM! All the training scripts and the model are opened.
 - 🔥 The full **MetaMathQA** dataset is now released in the huggingface [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main)!
 - 🔥 We released the GSM8K_Backward dataset is also released in the huggingface [GSM8K_Backward](https://huggingface.co/datasets/meta-math/GSM8K_Backward) to evaluate the reversal mathematical reasoning ability!
@@ -61,6 +62,7 @@
 | 🔥 MetaMath-7B         | **66.5**     | **19.8**    |
 | 🔥 MetaMath-13B        | **72.3**     | **22.4**    |
 | 🔥 MetaMath-Mistral-7B | **77.7**     | **28.2**    |
+| 🔥 MetaMath-Llemma-7B  | **69.2**     | **30.0**    |
 | WizardMath-70B      | 81.6         | 22.7        |
 | 🔥 MetaMath-70B        | **82.3**     | **26.6**    |
 
