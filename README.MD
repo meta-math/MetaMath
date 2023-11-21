@@ -137,7 +137,7 @@ We supervised fine-tune MetaMath-7B with the following hyperparameters:
 | Batch size     | 128         |
 | Learning rate  | 2e-5        |
 | Epochs         | 3           |
-| Max length     | 2048        |
+| Max length     | 512         |
 | LR scheduler   | cosine      |
 
 <h2 id="evaluation">Evaluation</h2>
