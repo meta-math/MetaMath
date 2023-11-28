@@ -123,7 +123,7 @@ class BackwardReasoning():
 
     def fetch_data_from_openai(self):
         def wrap(e):
-            variable, special_token = (f"{self.unknown_var}", "") if "GSM9K" in self.ds_name else (f"${self.unknown_var}$", "### ")
+            variable, special_token = (f"{self.unknown_var}", "") if "GSM8K" in self.ds_name else (f"${self.unknown_var}$", "### ")
             if self.method == "fobar":
                 wrap_q = f"""{e['inv_question']}\n{special_token}If we know the answer to the above question is {e['candidate_answer']}, what is the value of unknown variable {variable}?"""
             elif self.method == "SV":
