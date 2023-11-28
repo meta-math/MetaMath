@@ -127,7 +127,7 @@ class ForwardReasoning():
 
     def fetch_data_from_openai(self):
         def wrap(e):
-            return "{}\n\nQuestion: {}\nA:".format(self.prompt, e['question'])
+            return "{}\n\nQuestion: {}\nA: Let's think step by step.\n".format(self.prompt, e['question'])
 
         def extract(e, reply):
             e['pred_answer'] = reply

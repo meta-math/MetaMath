@@ -3,8 +3,7 @@ I first give you an original question with an unknown variable x, You help me de
 Follow the given examples and answer the question.
 
 Question: Randy has 60 mango trees on his farm. He also has x less than half as many coconut trees as mango trees. Randy has 85 trees in all on his farm. What is the value of unknown variable x?
-A:
-Let's think step by step.
+A: Let's think step by step.
 To solve this problem, we need to set up an equation based on the given information and then solve for the unknown variable x.
 Let's break down the information given:
 Randy has 60 mango trees.
@@ -24,8 +23,7 @@ x = 5
 The value of x is 5.
 
 Question: Joy can read 8 pages of a book in 20 minutes. It will take her 5 hours to read x pages. What is the value of unknown variable x?
-A:
-Let's think step by step.
+A: Let's think step by step.
 To solve this problem, we need to determine the value of x, which represents the number of pages Joy will read in 5 hours.
 We know that Joy can read 8 pages in 20 minutes. Let's find out how many pages she can read in 1 minute:
 8 pages / 20 minutes = 0.4 pages per minute
@@ -36,8 +34,7 @@ Therefore, the value of the unknown variable x is 120. Joy will read 120 pages i
 The value of x is 120.
 
 Question: In a truck, there are 26 pink hard hats, 15 green hard hats, and 24 yellow hard hats. If Carl takes away 4 pink hard hats, and John takes away x pink hard hats and twice as many green hard hats as the number of pink hard hats that he removed, The total number of hard hats that remained in the truck is 43. What is the value of unknown variable x?
-A:
-Let's think step by step.
+A: Let's think step by step.
 To solve this problem, we need to set up an equation based on the given information and then solve for the unknown variable x.
 Let's break down the information given:
 Number of pink hard hats: 26 - 4 (Carl takes away 4 pink hard hats)
@@ -59,8 +56,7 @@ x = 6
 The value of x is 6.
 
 Question: Each bird eats 12 beetles per day, each snake eats 3 birds per day, and each jaguar eats 5 snakes per day. If there are x jaguars in a forest, 1080 beetles are eaten each day. What is the value of unknown variable x?
-A:
-Let's think step by step.
+A: Let's think step by step.
 To solve this problem, we need to determine the value of x, which represents the number of jaguars in the forest.
 Let's break down the information given:
 Number of beetles eaten by each bird per day: 12
@@ -79,8 +75,7 @@ x = 6
 The value of x is 6.
 
 Question: Mr. Sam shared a certain amount of money between his two sons, Ken and Tony. If Ken got x, and Tony got twice as much as Ken, the money was shared 5250. What is the value of unknown variable x?
-A:
-Let's think step by step.
+A: Let's think step by step.
 To solve this problem, we need to determine the value of x, which represents the amount of money Ken received from Mr. Sam.
 We know that Tony received twice as much money as Ken. Therefore, Tony received 2x.
 The total amount of money shared between Ken and Tony is 5250.
@@ -95,8 +90,7 @@ x = 1750
 The value of x is 1750.
 
 Question: It's Ava's birthday party. Her parents bought a unicorn piñata for $13 and filled it with all of her favorite treats. They bought 4 bags of Reese's for $9 per bag, 3 bags of Snickers for $5 per bag, and 5 bags of Skittles for x per bag. The unicorn piñata and the treats cost 99 altogether. What is the value of unknown variable x?
-A:
-Let's think step by step.
+A: Let's think step by step.
 To solve this problem, we need to determine the value of x, which represents the cost of each bag of Skittles.
 Let's break down the information given:
 Cost of the unicorn piñata: $13
@@ -122,8 +116,7 @@ x = $7
 The value of x is $7.
 
 Question: Liza bought x kilograms of butter to make cookies. She used one-half of it for chocolate chip cookies, one-fifth of it for peanut butter cookies, and one-third of the remaining butter for sugar cookies. There are 2 kilograms of butter left after making those three kinds of cookies. What is the value of unknown variable x?
-A:
-Let's think step by step.
+A: Let's think step by step.
 To solve this problem, we need to determine the value of x, which represents the initial amount of butter Liza bought in kilograms.
 Let's break down the information given:
 Amount of butter used for chocolate chip cookies: 1/2x
@@ -147,8 +140,7 @@ To solve for x, we multiply both sides of the equation by 10/2:
 The value of x is 10.
 
 Question: Carly collected x starfish with 5 arms each and one seastar with 14 arms. The animals she collected have 49 arms in total. What is the value of unknown variable x?
-A:
-Let's think step by step.
+A: Let's think step by step.
 To solve this problem, we need to determine the value of x, which represents the number of starfish with 5 arms that Carly collected.
 Let's break down the information given:
 Number of starfish with 5 arms: x
