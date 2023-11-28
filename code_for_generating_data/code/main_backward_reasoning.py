@@ -130,7 +130,7 @@ class BackwardReasoning():
                 wrap_q = f"""{e['inv_question']} What is the value of unknown variable {variable}?"""
             else:
                 raise ValueError(f"unknown method: {self.method}")
-            return f"""{self.prompt}\n\nQuestion: {wrap_q}\nA:"""
+            return f"""{self.prompt}\n\nQuestion: {wrap_q}\nA: Let's think step by step.\n"""
 
         def extract(e, reply):
             e['inv_question_pred_answer'] = reply
