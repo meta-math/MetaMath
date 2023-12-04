@@ -72,8 +72,14 @@
 Clone Metamath and install the required packages:
 
 ```bash
-git clone https://github.com/meta-math/MetaMath.git
-cd MetaMath
+# git clone https://github.com/meta-math/MetaMath.git
+# git clone git@github.com:brando90/MetaMath.git
+https://github.com/brando90/MetaMath.git
+conda create --name meta_math python=3.10 -y
+conda activate meta_math
+
+# cd ~/MetaMath
+cd ~/brando9/MetaMath
 pip install -r requirements.txt
 ```
 
@@ -137,7 +143,7 @@ We supervised fine-tune MetaMath-7B with the following hyperparameters:
 | Batch size     | 128         |
 | Learning rate  | 2e-5        |
 | Epochs         | 3           |
-| Max length     | 2048        |
+| Max length     | 512         |
 | LR scheduler   | cosine      |
 
 <h2 id="evaluation">Evaluation</h2>
@@ -147,6 +153,12 @@ we use the vllm to help the fast generation:
 ```
 python eval_gsm8k.py --model "path/to/save" --data_file ./data/test/GSM8K_test.jsonl
 python eval_math.py --model "path/to/save" --data_file ./data/test/MATH_test.jsonl
+
+cd ~/brando9/MetaMath
+CUDA_VISIBLE_DEVICES=0 python eval_math.py --model "meta-math/MetaMath-Mistral-7B" --data_file ./data/test/MATH_test.jsonl --tensor_parallel_size 1
+
+cd ~/brando9/MetaMath
+python eval_math.py --model "/home/ubuntu/.cache/huggingface/hub/models--meta-math--MetaMath-Mistral-7B" --data_file ./data/test/MATH_test.jsonl
 ```
 where the "path/to/save" should be replaced by the finetuned model, you can also download our series of MetaMath models in huggingface:  
 🤗 <a href="https://huggingface.co/meta-math/MetaMath-7B-V1.0" target="_blank">MetaMath 7B</a> 🤗 <a href="https://huggingface.co/meta-math/MetaMath-13B-V1.0" target="_blank">MetaMath 13B</a> 🤗 <a href="https://huggingface.co/meta-math/MetaMath-70B-V1.0" target="_blank">MetaMath 70B</a>

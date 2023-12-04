@@ -111,5 +111,8 @@ def parse_args():
     return parser.parse_args()
 
 if __name__ == "__main__":
+    import time
+    start = time.time()
     args = parse_args()
     test_hendrycks_math(model=args.model, data_path=args.data_file, start=args.start, end=args.end, batch_size=args.batch_size, tensor_parallel_size=args.tensor_parallel_size)
+    print(f'Elapsed time secs, mins, hours: {time.time() - start}secs, {(time.time() - start)/60}mins, {(time.time() - start)/3600}hours\a')
