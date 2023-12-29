@@ -82,6 +82,7 @@ If you encounter a Ray installation problem, please run:
 ```bash
 pip install --upgrade ray
 pip install --upgrade pyarrow
+pip install pandas
 ```
 
 <h2 id="Inference">Dataset Usage</h2>
@@ -105,7 +106,7 @@ or
 
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 -m torch.distributed.launch --master_addr ${MASTER_ADDR} --master_port ${MASTER_PORT} --nproc_per_node=8 --use_env train_math.py \
-    --model_name_or_path "path/to/llama-2" \
+    --model_name_or_path "meta-llama/Llama-2-7b-hf" \
     --data_path "path/to/metamathqa" \
     --data_length 10000000 \
     --bf16 True \
